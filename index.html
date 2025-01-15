@@ -9,38 +9,45 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #FF7E5F, #FEB47B);
+            background: #f8f9fa;
             color: #333333;
             line-height: 1.6;
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-bottom: 2px solid #FF7E5F;
+            background-color: #ffd700;
+            border-bottom: 2px solid #ffc107;
         }
         header h1 {
             font-size: 2.5em;
             margin: 0;
-            color: #FF7E5F;
+            color: #333333;
         }
         header p {
             font-size: 1.2em;
             margin-top: 10px;
         }
+        header .logo-placeholder {
+            margin: 10px auto;
+        }
+        header .logo-placeholder img {
+            max-width: 100px;
+            height: auto;
+        }
         section {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: #FFFFFF;
+            background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         section h2 {
             font-size: 2em;
-            border-bottom: 2px solid #FF7E5F;
+            border-bottom: 2px solid #ffd700;
             padding-bottom: 10px;
-            color: #FF7E5F;
+            color: #333333;
         }
         section p {
             font-size: 1.1em;
@@ -53,8 +60,8 @@
         }
         .campaign-link a {
             text-decoration: none;
-            color: #FFFFFF;
-            background: #FF7E5F;
+            color: #ffffff;
+            background: #ffc107;
             padding: 15px 30px;
             font-size: 1.2em;
             font-weight: bold;
@@ -62,7 +69,7 @@
             transition: background 0.3s, transform 0.3s;
         }
         .campaign-link a:hover {
-            background: #FEB47B;
+            background: #ffca28;
             transform: scale(1.05);
         }
         .image-section {
@@ -79,11 +86,11 @@
             text-align: center;
             padding: 10px;
             font-size: 0.9em;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: #ffd700;
             margin-top: 20px;
         }
         footer a {
-            color: #FF7E5F;
+            color: #333333;
             text-decoration: underline;
         }
     </style>
@@ -91,6 +98,9 @@
 <body>
 
 <header>
+    <div class="logo-placeholder">
+        <img src="Memorabilia3.png" alt="Logo Placeholder">
+    </div>
     <h1>Join Our Mission</h1>
     <p>Be part of something extraordinary and help us achieve our vision!</p>
 </header>
@@ -107,7 +117,7 @@
 </section>
 
 <div class="image-section">
-    <img src="https://via.placeholder.com/800x400" alt="Inspiration Image">
+    <img src="logo.png" alt="Inspiration Image">
 </div>
 
 <div class="campaign-link">
