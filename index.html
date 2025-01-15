@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support FC Chkaduashi</title>
+    <title>Roadmap - FC Chkaduashi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,72 +24,80 @@
         }
         section {
             padding: 2em;
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        section img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 1em;
-        }
-        section p {
-            line-height: 1.6;
-            font-size: 1.1em;
-        }
-        .button {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 0.8em 1.5em;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            margin-top: 1em;
-        }
-        .button:hover {
-            background-color: #218838;
         }
         .roadmap {
-            margin-top: 2em;
+            position: relative;
+            background: #e9ecef;
             padding: 2em;
-            background-color: #e9ecef;
             border-radius: 8px;
         }
         .roadmap h2 {
             text-align: center;
             margin-bottom: 1em;
         }
-        .roadmap ul {
-            list-style: none;
-            padding: 0;
-        }
-        .roadmap li {
+        .roadmap .road {
             position: relative;
-            margin: 1em 0;
-            padding-left: 2em;
+            height: 200px;
+            width: 100%;
+            margin: 2em 0;
+            background: linear-gradient(to right, #007BFF, #0056b3);
+            border-radius: 30px;
         }
-        .roadmap li::before {
-            content: "";
+        .roadmap .point {
             position: absolute;
-            left: 0;
-            top: 0.5em;
-            width: 1em;
-            height: 1em;
-            background-color: #007BFF;
+            top: -30px;
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border: 5px solid #007BFF;
             border-radius: 50%;
-        }
-        footer {
             text-align: center;
-            padding: 1em 0;
-            background-color: #007BFF;
-            color: white;
-            margin-top: 2em;
+            line-height: 50px;
+            font-weight: bold;
+            color: #007BFF;
         }
-        footer p {
-            margin: 0;
+        .roadmap .point::after {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 20px;
+            background: #007BFF;
+        }
+        .roadmap .point-desc {
+            position: absolute;
+            top: 70px;
+            width: 150px;
+            background: #fff;
+            padding: 1em;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .point-desc.left {
+            left: -50px;
+        }
+        .point-desc.right {
+            right: -50px;
+        }
+        .point:nth-child(1) {
+            left: 5%;
+        }
+        .point:nth-child(2) {
+            left: 25%;
+        }
+        .point:nth-child(3) {
+            left: 50%;
+        }
+        .point:nth-child(4) {
+            left: 75%;
+        }
+        .point:nth-child(5) {
+            left: 95%;
         }
     </style>
 </head>
@@ -98,27 +106,26 @@
         <h1>Support FC Chkaduashi</h1>
     </header>
     <section>
-        <img src="https://via.placeholder.com/800x400" alt="FC Chkaduashi">
-        <p>
-            FC Chkaduashi is a passionate football club aspiring to climb to the top of Georgian football. Starting from the Regional League, we aim to rise to the Erovnuli Liga 1 and bring pride to the Samegrelo Region. Your support will help us cover crucial costs and ensure we can continue our journey to success.
-        </p>
-        <p>
-            Every contribution makes a difference. Join us in this exciting venture and become a part of our success story. Together, we can make FC Chkaduashi a force to be reckoned with!
-        </p>
-        <a class="button" href="https://gogetfunding.com/fc-chkaduashi/" target="_blank">Donate Now</a>
-    </section>
-    <section class="roadmap">
         <h2>Our Roadmap</h2>
-        <ul>
-            <li>2025: Establish FC Chkaduashi and participate in the Regional League.</li>
-            <li>2026: Build a dedicated football academy for youth training.</li>
-            <li>2027: Achieve promotion to League 4 and compete in the Georgian Cup.</li>
-            <li>2028: Advance to League 3 and strengthen our position in Georgian football.</li>
-            <li>2030: Compete in Erovnuli Liga 1 and qualify for European competitions.</li>
-        </ul>
+        <div class="roadmap">
+            <div class="road">
+                <div class="point" style="left: 5%;">1
+                    <div class="point-desc left">2025: Establish Club</div>
+                </div>
+                <div class="point" style="left: 25%;">2
+                    <div class="point-desc right">2026: Build Academy</div>
+                </div>
+                <div class="point" style="left: 50%;">3
+                    <div class="point-desc left">2027: Promote to League 4</div>
+                </div>
+                <div class="point" style="left: 75%;">4
+                    <div class="point-desc right">2028: Compete in Georgian Cup</div>
+                </div>
+                <div class="point" style="left: 95%;">5
+                    <div class="point-desc left">2030: Compete in Erovnuli Liga 1</div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2025 FC Chkaduashi. All rights reserved.</p>
-    </footer>
 </body>
 </html>
