@@ -1,130 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Our Vision</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-            color: #333333;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffd700;
-            border-bottom: 2px solid #ffc107;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-            color: #333333;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        header .logo-placeholder {
-            margin: 10px auto;
-        }
-        header .logo-placeholder img {
-            max-width: 100px;
-            height: auto;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        section h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 10px;
-            color: #333333;
-        }
-        section p {
-            font-size: 1.1em;
-            margin: 15px 0;
-        }
-        .campaign-link {
-            display: block;
-            text-align: center;
-            margin: 30px 0;
-        }
-        .campaign-link a {
-            text-decoration: none;
-            color: #ffffff;
-            background: #ffc107;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s, transform 0.3s;
-        }
-        .campaign-link a:hover {
-            background: #ffca28;
-            transform: scale(1.05);
-        }
-        .image-section {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image-section img {
-            width: 100px;
-            height: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
-            background-color: #ffd700;
-            margin-top: 20px;
-        }
-        footer a {
-            color: #333333;
-            text-decoration: underline;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EarlyRiser - Coming Soon HTML Template</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/css/all.min.css">
+	<link rel="stylesheet" href="style-global.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-responsive.css">
+	<script src="js/jquery.js"></script>
+	<script src="form/contactform.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 
-<header>
-    <div class="logo-placeholder">
-        <img src="Logo.png" alt="Logo Placeholder">
-    </div>
-    <h1>Join Our Mission</h1>
-    <p>Be part of something extraordinary and help us achieve our vision!</p>
-</header>
 
-<section>
-    <h2>Our Goals</h2>
-    <p>Our mission is to inspire change and create a meaningful impact in the lives of countless individuals. We aim to establish a platform that uplifts communities and fosters opportunities for everyone.</p>
+	<div class="contactform">
+		<a href="javascript:void()" class="closeform"><i class="fa-solid fa-xmark"></i></a>
+		<div class="form-layout">
+			<h3>Contact Us</h3>
+			<form id="contactform" action="form/contactform.php" class="flex-sb">
+				<input type="text" name="name" placeholder="Name*">
+				<input type="text" name="email" placeholder="Email Address*">
+				<textarea name="message" placeholder="Message*"></textarea>
+				<button type="submit" id="submit">Submit &nbsp; <i class="fa-solid fa-chevron-right"></i></button>
+			</form>
+		</div>
+	</div>
+	<!--contactform-->
 
-    <h2>Our Mission</h2>
-    <p>Driven by passion and dedication, we strive to achieve milestones that resonate with our values. Our project is centered on growth, inclusivity, and innovation, paving the way for a brighter future.</p>
 
-    <h2>What Inspires Us</h2>
-    <p>The stories of resilience and hope from people around the world motivate us to dream bigger. Together, we believe we can transform these dreams into reality.</p>
-</section>
 
-<div class="image-section">
-    <img src="Memorabilia3.png" alt="Inspiration Image">
-</div>
 
-<div class="campaign-link">
-    <a href="https://gogetfunding.com/fc-chkaduashi/" target="_blank">Support Our Campaign</a>
-</div>
+	<header>
+		<a href="#" class="logo">
+			<img src="images/logo.png" alt="" />
+		</a>
+		<a href="javascript:void();" class="contact showcontactform">
+			GET IN TOUCH &nbsp; <i class="fa-regular fa-envelope"></i>
+		</a>
+	</header>
 
-<footer>
-    <p>Thank you for visiting our page. To learn more about our journey or get in touch, feel free to <a href="#">contact us</a>.</p>
-</footer>
+	
+
+	<div class="image-area">&nbsp;</div>
+
+
+
+	<div class="text">
+		<h2>Welcome to EarlyRiser</h2>
+		<h3>We are Launching Very Soon. Stay Connected.</h3>
+		<div class="timer-wrap center">
+			<div class="setDate" id="setDate"></div> <!-- DD MONTHINSHORT YEAR LIKE: 10 JAN 2050 -->
+			<ul class="timer" id="timer"></ul>
+		</div>
+	</div>
+
+
+
+	<footer>
+		<div class="copyright">
+			Copyright &copy; <span id="year"></span> <a href="#">EarlyRiser</a>.
+		</div>
+		<div class="social">
+			<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-youtube"></i></a>
+		</div>
+	</footer>
+	
+
 
 </body>
 </html>
